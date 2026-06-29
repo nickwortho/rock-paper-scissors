@@ -23,10 +23,10 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
-    humanChoice.toLowerCase();
+    humanChoice = humanChoice.toLowerCase();
 
     if (humanChoice === computerChoice) {
-        console.log("Draw!");
+        console.log("Draw! You both chose " + humanChoice + "!");
         return draw;
     } else {
         switch (humanChoice) {
@@ -57,3 +57,31 @@ function playRound(humanChoice, computerChoice) {
         }
     }
 }
+
+function playGame() {
+    const rounds = 5;
+
+    let humanScore = 0;
+    let computerScore = 0;
+
+    for (let i = 0; i < rounds; i++) {
+        switch (playRound(getHumanChoice(), getComputerChoice())) {
+            case win:
+                humanScore++;
+            case lose:
+                computerScore++;
+            case draw:
+        }
+    }
+
+    if (humanScore > computerScore) {
+        console.log("Game finished - You Win!");
+    } else if (computerScore > humanScore) {
+        console.log("Game finished - You Lose!");
+    } else {
+        console.log("Game finished - It's a Draw!");
+    }
+    console.log("Player: " + humanScore + " - Computer: " + computerScore);
+}
+
+playGame();
