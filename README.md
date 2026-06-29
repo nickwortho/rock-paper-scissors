@@ -9,5 +9,5 @@ Plays a game of 5 rounds, each round you will enter your choice of rock, paper, 
 At the end of 5 rounds, whoever finished with the most points wins.
 
 View results in the browser console.
-
+ 
 ![Results Output](/screenshots/results_output.png)
