@@ -11,5 +11,10 @@ function getComputerChoice() {
         case 2:
             return "scissors";
     }
+}
+
+function getHumanChoice() {
+    // assumes choice always valid
+    let choice = prompt("Enter choice of: rock, paper, or scissors.", "rock");
 
 }
