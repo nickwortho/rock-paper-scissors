@@ -1,5 +1,7 @@
 # Rock, Paper, Scissors
 
+__NOTE:__ Game is now played through UI. The following information is outdated and needs updating.
+
 Browser console run game of Rock, Paper, Scissors.
 
 Plays a game of 5 rounds, each round you will enter your choice of rock, paper, or scissors.
