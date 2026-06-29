@@ -68,9 +68,11 @@ function playGame() {
         switch (playRound(getHumanChoice(), getComputerChoice())) {
             case win:
                 humanScore++;
+                break;
             case lose:
                 computerScore++;
-            case draw:
+                break;
+            default:
         }
     }
 
